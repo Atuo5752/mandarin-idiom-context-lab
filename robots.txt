@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://atuo5752.github.io/mandarin-idiom-context-lab/sitemap.xml
