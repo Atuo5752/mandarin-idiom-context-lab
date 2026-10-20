@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Free interactive Chinese idiom (Chengyu) classroom activity: learn 画蛇添足 with pinyin, meanings, real-world context, and an instant feedback quiz. No account, free to use.">
+<title>Free Chengyu Context Quiz · 画蛇添足 · Mandarin in Context</title>
+<style>
+:root{font-family:system-ui,-apple-system,"PingFang SC","Noto Sans SC",sans-serif;color:#122f3c;background:#f1f5f7}*{box-sizing:border-box}body{margin:0}.shell{max-width:780px;margin:auto;padding:20px 18px 55px}header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0 22px}.brand{font-size:13px;letter-spacing:.12em;font-weight:750}.tag{font-size:12px;padding:8px 12px;border-radius:99px;background:#d9e9e7}main{background:#fff;border-radius:24px;box-shadow:0 8px 35px #132c3210;overflow:hidden}.hero{background:linear-gradient(120deg,#e5f4ef,#f9ead3);padding:32px 34px}h1{font-size:clamp(30px,6vw,48px);margin:6px 0}h2{margin:0 0 8px}p{line-height:1.8;margin:10px 0}.subtitle{max-width:650px;font-size:15px}.section{padding:26px 34px;border-bottom:1px solid #e5ebed}.tiny{color:#607880;font-size:13px}.idiom{font-size:40px;font-weight:780;color:#125c66;letter-spacing:.1em}.pinyin{font-size:18px;color:#306f78}.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:22px 0}.info{background:#f3f9fa;border-radius:12px;padding:16px}.info small{color:#55767b}.dialogue{background:#fff8e9;border-left:3px solid #d4ae63;padding:15px;border-radius:6px;white-space:pre-line;line-height:1.8;margin-top:17px}.opt{display:block;width:100%;text-align:left;background:#fff;border:2px solid #d8e4e7;border-radius:12px;padding:16px;font-size:16px;line-height:1.6;margin:12px 0;cursor:pointer;color:inherit}.opt:hover:not(:disabled){border-color:#196b70;background:#f3faf9}.opt:focus-visible{outline:3px solid #e5aa51;outline-offset:2px}.opt:disabled{cursor:default}.opt.correct{background:#e6f6ee;border-color:#278260}.opt.wrong{background:#fff0ee;border-color:#c95d50}#feedback{min-height:60px;background:#f1f7f7;padding:17px;border-radius:12px;line-height:1.7;margin-top:20px}footer{color:#698088;padding:24px 7px;font-size:13px;line-height:1.7}a{color:#126974}@media(max-width:600px){.hero,.section{padding:24px 20px}.pair{grid-template-columns:1fr}}
+</style></head>
+<body><div class="shell"><header><div class="brand">MANDARIN IN CONTEXT</div><span class="tag">Free educational demo · 教学演示</span></header><main>
+<div class="hero"><div class="tiny">CHENGYU IN REAL CONTEXT</div><h1>学会成语，不只记意思。</h1><p class="subtitle">One free, interactive Mandarin idiom exercise for teachers and learners. 汉字、拼音、情境对话、课堂即时反馈。</p><p class="tiny">Free · No sign-in · No tracking · Works on phones and laptops</p></div>
+<section class="section"><div class="tiny">01 / THE IDIOM · 成语知识</div><div class="idiom">画蛇添足</div><div class="pinyin">huà shé tiān zú</div><div class="pair"><div class="info"><small>LITERAL · 字面</small><p>画蛇时又加上脚。</p><p class="tiny">To draw legs on a snake.</p></div><div class="info"><small>MEANING · 用法</small><p>做了多余的事，反而破坏原来的效果。</p><p class="tiny">To spoil something by adding unnecessary details.</p></div></div><div class="tiny">EXAMPLE DIALOGUE · 情境对话</div><div class="dialogue">A：报告已经够清楚了，不用再加那五页。
+B：你说得对，再加就画蛇添足了。</div></section>
+<section class="section"><div class="tiny">02 / PRACTICE · 情境判断</div><h2>哪一句最合适？</h2><p>你们做的海报已经很清楚了，有人又加了十张无关的装饰图，结果重点反而看不见了。</p>
+<button class="opt" data-i="0" type="button">A. 你画蛇添足了，原来的版本更清楚。</button>
+<button class="opt" data-i="1" type="button">B. 你一石二鸟了，这样效率更高。</button>
+<button class="opt" data-i="2" type="button">C. 你对牛弹琴了，大家不懂音乐。</button>
+<div id="feedback" role="status" aria-live="polite">选一项，马上看到答案和解释。Choose an answer for immediate feedback.</div></section>
+<section class="section"><h2>For teachers · 给中文教师</h2><p>这是一个原创免费练习，适合课堂投屏、线上授课时使用。尚未进行正式的课堂效果测试，欢迎指出任何释义或语用问题。</p><p class="tiny">Want to suggest improvements or report a teaching issue? <a href="https://github.com/Atuo5752/mandarin-idiom-context-lab/issues">Leave feedback on GitHub</a> (requires a GitHub account). No purchases or sign-ups are offered here.</p></section>
+</main><footer>Independent original educational demo. Not affiliated with or endorsed by any test, school, publisher, or teaching organization. No data is collected or uploaded by this page. © 2026.</footer></div>
+<script>
+document.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>{
+const n=Number(b.dataset.i),ok=n===0;
+document.querySelectorAll('.opt').forEach(x=>{x.disabled=true;if(Number(x.dataset.i)===0)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+document.querySelector('#feedback').textContent=ok?'✓ 正确！画蛇添足指做了多余的事，反而破坏原来的效果。':'再想想。正确答案是 A：画蛇添足。多余的装饰反而让海报失去重点。';
+}));
+</script></body></html>
